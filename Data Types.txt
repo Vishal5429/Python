@@ -1,0 +1,111 @@
+Data Types:
+1.int:
+-Behavior: fixed
+-order: ordered
+-Homogeneity: homogeneous
+-Default Value: 0
+-Demo: 
+my_int = 42
+print("Original Integer:", my_int)
+#performing arithmetic operations
+result= my_int*2
+print("Result after multiplication:", result)
+
+2.list
+-Behavior: Mutable
+-order: ordered
+-Homogeneity: Heterogeneous
+-Default Value: '[]' (an empty list)
+-Demo: 
+my_list = [1, 'hello', 3.14, True]
+print("Orginal List:", my_list)
+#Adding an element to the list
+my_list.append('world')
+print("List after appending 'world':",my_list)
+#removing an element from the list
+my_list.remove(3.14
+print("List after removing 3.14:", my_list)
+
+3.Tuple:
+-Behavior: fixed
+-order: ordered
+-Homogeneity: Heterogeneous
+-Default Value: '()' (an empty tuple)
+-Demo: 
+my_tuple = (1, ''apple', 3.14, False)
+print("Original Tuple:", my_tuple)
+#Accesing element in the tuple
+print("First element:", my_tuple[0])
+print("Last element:", my_tuple[-1])
+
+4.Set:
+-Behavior: Mutable
+-order: Unordered
+-Homogeneity: Homogeneous
+-Default Value: 'set()' (an empty set)
+-Demo: 
+my_set ={1,2,3,4,5}
+print("Original Set:", my_set)
+print("Original Set:", my_set)
+#Adding an element to the set
+my_set.add(6)
+print("Set after adding 6:", my_set)
+
+5.Dict:
+-Behavior: Mutable
+-order: ordered
+-Homogeneity: Heterogeneous
+-Default Value: '{}' (an empty dictionary)
+-Demo: 
+my_dict = {'name': 'John', 'age': 25, 'city': 'New York'}
+print("Original Dictionary:", my_dict)
+#modifying a value in the dictionary
+my_dict['age'] = 26
+print("Dictionary after age:", my_dict)
+
+#Inserting at the beginning of the list
+my_list = [2, 3, 4, 5]
+my_list.insert(0, 1)
+print("List after inserting at the beginning:", my_list)
+# Inserting at the middle of the list
+middle_index = len(my_list) // 2
+my_list.insert(middle_index, 3.5)
+print("List after inserting at the middle:", my_list)
+#1.basic slicing start:stop)
+my_list = [10, 20, 30, 40, 50, 60, 70, 80]
+print("basic slicing (start:stop):")
+print(my_list[2:5])
+#2.Slicing with the step(start:stop:step)
+print("\nSlicing with step (start:stop:step):")
+print(my_list[1:8:2])
+#3.Slicing with negative index(Count from the end)
+print("\nSlicing with negative index:")
+print(my_list[-5:-2])
+
+
+Machine is the subfield of computer science that gives "computers the ability to learn without being explicitly programmed."
+Algorithm: An algorithm is a set of mathematical insructions or procedures used to learn patterns or relationships from data.
+
+
+What is function:
+A function is a resuable bolck of code design to perform a specific task.
+We can create function by using the word def followed by the fuction name.
+
+HOW TO FIND THE BUILTIN METHODS IN PYTHON.
+print(dir(str))
+
+A lambda function is an anononymous function, often referred as
+1) lambda expression
+2) lambda function
+3) lambda form
+syntax: lambda arguments: expression
+
+demo:
+	add two numbers using a lambda function
+
+add = lambda x, y : x + y
+result = add(3,5)
+print(result)
+===================
+is_palindrome = lamda s: s==s[::-1]
+print(is_palindrome("radar"))
